@@ -1,0 +1,11 @@
+<div class="box-title">
+  <div class="breadcrumb-nav">
+    <a class="nav-title" data-bind="attr: {href: home}">首页</a>
+    <nav data-bind="foreach: titleList">
+      <i class="fa fa-angle-right"></i>
+      <a class="nav-title" data-bind="attr: {href: url}">
+        <span data-bind="text:text"></span>
+      </a>
+    </nav>
+  </div>
+</div>
