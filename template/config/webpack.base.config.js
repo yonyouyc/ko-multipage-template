@@ -2,7 +2,6 @@ var plugins = require("./plugins"),
     basepath = process.cwd(),
     path = require('path'),
     distpath = path.resolve(basepath,  "./dist"),
-    I18nPlugin = require("i18n-webpack-plugin"),
     ExtractTextPlugin = require("extract-text-webpack-plugin"),
     CopyWebpackPlugin = require('copy-webpack-plugin');
 var projectRoot = path.resolve(__dirname, '../')
@@ -66,7 +65,6 @@ var configs = Object.keys(languages).map(function(language) {
               from: path.resolve(__dirname, '../readme.md'),
               to: path.resolve(__dirname, '../dist/static')
             }]),
-            new I18nPlugin(languages[language]),
             new ExtractTextPlugin("[name].css")
         ]
     }

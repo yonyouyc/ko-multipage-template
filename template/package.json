@@ -48,6 +48,7 @@
     "less-loader": "^2.2.3",
     "style-loader": "^0.13.1",
     "stylus-loader": "^2.4.0",
+    "stylus": "^0.52.4",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.13.2",
