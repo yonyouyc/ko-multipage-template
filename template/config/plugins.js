@@ -32,7 +32,7 @@ var htmlPlugin = function (language) {
                     "../static/iuap-design-"+iuapversion+"/css/u.min.css",
                     "../static/iuap-design-"+iuapversion+"/css/grid.min.css",
                     "../static/css/base.css",
-                    "../static/u-tree/tree.css"
+                    "../static/iuap-design-"+iuapversion+"/css/tree.min.css"
                 ]),
                 "js": [
                     //jquery

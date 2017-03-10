@@ -4,7 +4,7 @@ Collection.define('ycctrl.projectdef', {
   model: 'ycctrl.projectdef',
   proxy: {
     get: '/cpu-project-def/ycctrl/projectdef/list'
-    //get: '/cpu-bidtrade/bidtrade/list'
+    // get: '/cpu-bidtrade/bidtrade/list'
   }
 })
 

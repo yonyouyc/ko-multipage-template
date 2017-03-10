@@ -2,7 +2,7 @@ import './index.less'
 let ko = window.ko
 window.jquery = window.$
 import './time/time'
-let complist = ['box-scroll-header', 'breadcrumbs', 'refer', 'filesupload']
+let complist = ['breadcrumbs']
 let iuapcomplist = ['u-grid']
 // 注册普通组件
 function register (name) {
@@ -30,8 +30,5 @@ complist.forEach(function (item) {
 iuapcomplist.forEach(function (item) {
   registerIuapComponent(item)
 })
-
-
-
 
 export default ko
