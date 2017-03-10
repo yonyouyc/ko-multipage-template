@@ -4,7 +4,6 @@ import 'components'
 import _ from 'lodash'
 import projectdef from 'collection/projectdef'
 import operation from './opt'
-/* global __ */
 /* global ko */
 
 let collection = projectdef
@@ -78,11 +77,11 @@ var viewModel = {
     }, {
       'field': 'statusNameShow',
       'dataType': 'String',
-      'title': __('status'),
+      'title': '状态',
       'width': '180'
     }, {
       'field': 'statusNameShow',
-      'title': __('operation'),
+      'title': '操作',
       dataType: 'action',
       item: operation()
     }]

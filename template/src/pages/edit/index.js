@@ -8,7 +8,6 @@ import EventBus from 'common/eventbus'
 import _ from 'lodash'
 import {personrefer, supplydocrefer, singlesupplydocrefer, orgrefer} from 'components/modalrefer'
 
-/* global __ */
 /* global u */
 var id = window.global.query('id')
 // 演示数据
@@ -61,7 +60,7 @@ var viewModel = {
   },
   id: ko.observable(''),
   title: ko.observable('供应商标题'),
-  thirdtitle: ko.observable(__('title')),
+  thirdtitle: ko.observable('title'),
   ck1: ko.observable(''),
   ck2: ko.observable(''),
   showorgrefer: function () {
