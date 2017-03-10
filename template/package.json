@@ -1,30 +1,28 @@
 {
-  "name": "cpu-bidtrade-fe",
-  "version": "0.0.1",
-  "description": "在线竞价前端页面",
+  "name": "ko-multipage-templage",
+  "version": "1.1.0",
+  "description": "ko multipage project structure",
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "dev": "webpack-dev-server --port 8084 --host 127.0.0.1 --inline --hot --config config/webpack.dev.config.js",
+    "dev": "webpack-dev-server --port 8080 --host 127.0.0.1 --inline --hot --config config/webpack.dev.config.js",
     "build": "webpack --progress  --config config/webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "http://git.yonyou.com/nccloud_yuncai/cpu-bidtrade-fe.git"
+    "url": "https://github.com/yonyouyc/ko-multipage-template.git"
   },
   "keywords": [
     "bidtrade"
   ],
-  "author": "songhlc, zhangmyh",
+  "author": "songhlc",
   "license": "MIT",
   "dependencies": {
     "eventemitter2": "^2.2.2",
     "knockout": "^3.4.1",
     "ko-epui": "1.5.2",
     "lodash": "^4.17.2",
-    "socket.io-client": "^1.7.2",
-    "store": "^1.3.20",
-    "webuploader": "^0.1.8"
+    "store": "^1.3.20"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
@@ -46,7 +44,6 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.24.1",
-    "hyperdown": "^2.1.0",
     "jquery": "^3.1.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
