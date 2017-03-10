@@ -2,7 +2,6 @@
   "name": "ko-multipage-templage",
   "version": "1.1.0",
   "description": "ko multipage project structure",
-  "main": "index.js",
   "scripts": {
     "test": "test",
     "dev": "webpack-dev-server --port 8080 --host 127.0.0.1 --inline --hot --config config/webpack.dev.config.js",
