@@ -36,8 +36,8 @@ var htmlPlugin = function (language) {
                 ]),
                 "js": [
                     //jquery
-                    "../static/jquery/jquery-1.9.1.min.js",
-                    "../static/knockoutjs/knockout-3.4.1.js",
+                    "https://www.yonyouyc.com/cpu-cdn/js/jquery-2.1.1.js",
+                    "https://www.yonyouyc.com/cpu-cdn/js/knockout/knockout-3.4.0.min.js",
                     "../static/iuap-design-"+iuapversion+"/js/i18next.js",
                     "../static/iuap-design-"+iuapversion+"/js/u.js",
                     "../static/iuap-design-"+iuapversion+"/js/u-grid.min.js",
