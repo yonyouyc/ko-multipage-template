@@ -33,5 +33,10 @@ module.exports = {
     type: 'set',
     method: 'post',
     url: '/cpu-bidtrade/bidtradeRegister/refuse'
+  },
+  bt_removeBt: {
+    type: 'set',
+    method: 'post',
+    url: '/cpu-bidtrade/bidtrade/deleteBidtrade'
   }
 }
