@@ -1,79 +1,27 @@
-# 在线竞价前端工程
+#友云采knockout 多页面应用项目模板
+- 基于konckout ko-epui kero
+- 使用vue-cli初始化工具
+- 初始化多页面的结构
 
-## 依赖
-- [nodejs v5+，本地控制台能使用npm即可](http://nodejs.org/)
-- [neo-ui](http://tinper.org/dist/neoui/index.html)
-- [kero](http://tinper.org/dist/kero/docs/overview.html)
-- [ko-epui 基于kero封装的ui组件](https://github.com/songhlc/ko-epui)
-- [es6](http://es6.ruanyifeng.com/)
-- jquery
-- [lodash-4.17.2](https://lodash.com/docs/4.17.2)
-- [less](http://www.lesscss.net/)
+## 如何使用
 
-## 前端IDE推荐
+1. 安装vue-cli
+see [如何安装vue-cli](https://github.com/vuejs/vue-cli)
+2. 使用vue-cli初始化项目
+vue init yonyouyc/ko-multipage-template <project-name>
 
-- webstorm(收费)
-- sublime
-- atom
+project-name 请输入自己的project-name
 
-## 开始开发
-```
-npm install
-npm run dev
-```
-默认会启动localhost:8084 页面  访问localhost:8084/ 点击重新登录(public01/a111111) 点击登录,然后url切换到localhost:8084/list/index.zh_CN.html即可
-
-## 开发约束
-- 1.多页面入口地址: src/pages/**/index.js(请保证所有入口页面都叫index.js)
-- 2.首页入口地址: src/pages/index/index.js
-- 3.静态资源地址: static/.有需要访问静态资源时,请使用static/*的链接
+## 开发约束:
+- 1.多页面入口地址:src/pages/**/index.js(请保证所有入口页面都叫index.js)
+- 2.首页入口地址:src/pages/index/index.js
+- 3.静态资源地址:static/.有需要访问静态资源时,请使用static/*的链接
 - 4.开发服务代理:见config/index.js. 中dev下的proxyTable
 - 5.本地端口号修改:见config/index.js. dev下的port
 
-## 国际化多语
+## 学习相关:
+- [knockout文档](http://knockoutjs.com/)
+- [kero文档](http://tinper.org/dist/kero/docs/overview.html)
+- [ko-epui文档](https://github.com/songhlc/ko-epui)
 
-- 所有语种文件放到locale目录下,目录结构: locale/**/translate.json
-- translate.json 结构{ 'key':'value','key2','value2'}
-- 语种为: zh_CH,en_US...
-- ejs模板中使用多语 ${__("key")},js中使用多语__("key")
-
-## 开发常用
-
-### 页面示例
-
-#### 覆盖场景
-
-- 列表查询
-- 表格分页
-- 状态切换
-- 编辑页面
-- input控件使用
-- 容器组件
-- checkbox组件
-- radio组件
-- select组件
-- switch组件
-- date组件
-- textarea组件
-
-#### 缺少场景
-
-- 批量编辑表格
-- 参照
-- 编辑表格 + 参照 + 下拉 等
-- 页面生命周期的抽象
-- mock-server 例子
-
-1. 列表页面示例:参考src/pages/list/
-2. 编辑页面示例:参考src/pages/edit/
-
-### 结构描述
-
-视图  | 数据模型 | 后端服务
----|---|---
-.ejs | model/collection | model/collection get/post/put/delete
-ko,neoui,kero,ko-epui | datatable | ajax
-
-
-
-
+-[bug反馈](https://github.com/yonyouyc/ko-multipage-template/issues)
