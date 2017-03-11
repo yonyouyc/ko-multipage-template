@@ -1,5 +1,12 @@
 /** 
- * tinper-neoui v3.1.27
+ * kero-adapter v3.1.23
+ * kero adapter
+ * author : [object Object]
+ * homepage : https://github.com/iuap-design/kero-adapter#readme
+ * bugs : https://github.com/iuap-design/kero-adapter/issues
+ **/ 
+/** 
+ * tinper-neoui v3.1.23
  * UI Framework Used For Enterprise.
  * author : yonyou FED
  * homepage : https://github.com/iuap-design/tinper-neoui#readme
@@ -2616,7 +2623,6 @@ img {
 
 .u-mdlayout-detail {
   height: 100%;
-  width: 100%;
   background: #F2F9FA;
   overflow: hidden;
   position: relative;

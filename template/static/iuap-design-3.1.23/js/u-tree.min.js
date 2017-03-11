@@ -1,5 +1,12 @@
 /** 
- * tinper-neoui-tree v3.1.27
+ * kero-adapter v3.1.23
+ * kero adapter
+ * author : [object Object]
+ * homepage : https://github.com/iuap-design/kero-adapter#readme
+ * bugs : https://github.com/iuap-design/kero-adapter/issues
+ **/ 
+/** 
+ * tinper-neoui-tree v3.1.23
  * tree
  * author : yonyou FED
  * homepage : https://github.com/iuap-design/tinper-neoui-tree#readme

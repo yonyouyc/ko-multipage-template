@@ -5,7 +5,7 @@ var models = require('./models.json'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     _ = require('lodash');
 var srcPath = path.resolve(basepath,  "./src");
-var iuapversion = "3.1.27";
+var iuapversion = "3.1.23";
 var entrys = _.mapValues(models, function(value,key) {
     return srcPath+"/pages/"+key+'/index.js';
 });
@@ -38,7 +38,6 @@ var htmlPlugin = function (language) {
                     //jquery
                     "https://www.yonyouyc.com/cpu-cdn/js/jquery-2.1.1.js",
                     "https://www.yonyouyc.com/cpu-cdn/js/knockout/knockout-3.4.0.min.js",
-                    "../static/iuap-design-"+iuapversion+"/js/i18next.js",
                     "../static/iuap-design-"+iuapversion+"/js/u.js",
                     "../static/iuap-design-"+iuapversion+"/js/u-grid.min.js",
                     "../static/iuap-design-"+iuapversion+"/js/u-tree.min.js"
