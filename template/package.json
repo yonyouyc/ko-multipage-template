@@ -1,6 +1,6 @@
 {
   "name": "ko-multipage-templage",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "ko multipage project structure",
   "scripts": {
     "test": "test",
