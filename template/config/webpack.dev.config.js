@@ -5,7 +5,7 @@ var merge = require('webpack-merge')
 var plugins=require('./plugins.js')
 configs.forEach(function(config){
   config.plugins = config.plugins.concat(plugins.dev(config.language))
-  config.devtool = 'eval-source-map'
+  //config.devtool = 'inline-source-map'
   config.devServer = {
     noInfo: true,
     hot: true,

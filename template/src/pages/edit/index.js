@@ -47,6 +47,16 @@ var viewModel = {
   chooseSupplyDoc: function () {
     choosesupplydoc()
   },
+  ds: [
+    {
+      name: 'key',
+      value: 2
+    },
+    {
+      name: 'key2',
+      value: 3
+    }
+  ],
   singlesupplydoc: function () {
     singlesupplydocrefer({
       onOk: function (msg) {
@@ -150,6 +160,16 @@ var viewModel = {
   editgridconfig: {
     'id': 'edit_grid',
     'data': projectdef.associations.detailList,
+    'ds': [
+      {
+        name: 'key',
+        value: 2
+      },
+      {
+        name: 'key2',
+        value: 3
+      }
+    ],
     'type': 'grid',
     'multiSelect': false,
     'editable': true,
@@ -162,7 +182,19 @@ var viewModel = {
       {'field': 'materialName', 'dataType': 'String', 'title': '物料信息', 'editType': 'string', 'renderType': 'timeRender', 'sortable': true, 'width': '125'},
       {'field': 'num', 'dataType': 'String', 'title': '数量', 'editType': 'float', 'editOptions': {'validType': 'float', 'precision': '8'}, 'sumCol': true, 'width': '125'},
       {'field': 'unit', 'dataType': 'String', 'title': '单位', 'editType': 'string', 'width': '125'},
-      {'field': 'enterpriseName', 'dataType': 'String', 'title': '人员', 'editType': chooseperson, 'width': '125'},
+      {'field': 'enterpriseName', 'dataType': 'String', 'title': '人员(refer)', 'editType': chooseperson, 'width': '125'},
+      {
+        'field': 'sex',
+        'dataType': 'string',
+        'title': '性别(combo)',
+        'editOptions': {
+          'id': 'combobox1',
+          'type': 'combo',
+          'datasource': 'sex'
+        },
+        'editType': 'combo',
+        'renderType': 'comboRender'
+      },
       {'field': 'reqDesc', 'dataType': 'String', 'title': '需求描述', 'editType': 'string', 'sumCol': true, 'width': '125'}
     ]
   },

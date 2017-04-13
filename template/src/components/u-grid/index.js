@@ -7,16 +7,18 @@
 //    nodes that have been supplied to the component. See below.
 import _ from 'lodash'
 import EventBus from 'common/eventbus'
+import getCombo from '../comboList'
+
 let editType = {
   default () {
 
-  },
-  combo (row, i, dom, vm) {
-    // if(!row.editOptions)return;
-    // var name="datasource_"+i;
-    // vm[name]=getStore(row.editOptions.datasource);
-    // row.editOptions.datasource=name;
   }
+  // combo (row, i, dom, vm) {
+  //  // if(!row.editOptions)return;
+  //  // var name='datasource_'+i;
+  //  // vm[name]=getStore(row.editOptions.datasource);
+  //  // row.editOptions.datasource=name;
+  // }
 }
 let dataType = {
   // renderType funtion转string
@@ -49,10 +51,16 @@ let dataType = {
   }
 }
 function fnChange (row, fnname, vm, i) {
+  var name
   if (row[fnname] && _.isFunction(row[fnname])) {
-    var name = fnname + '_' + i
+    name = fnname + '_' + i
     vm[name] = row[fnname]
     row[fnname] = name
+  }
+  if (fnname === 'editType' && row.editType === 'combo') {
+    name = 'datasource_' + i
+    vm[name] = getCombo(row.editOptions.datasource)
+    row.editOptions.datasource = name
   }
 }
 function createGrid (params, componentInfo) {
