@@ -2,6 +2,7 @@
 - 基于konckout ko-epui kero
 - 使用vue-cli初始化工具
 - 初始化多页面的结构
+- support webpack 3.x version
 
 ## 如何使用
 
