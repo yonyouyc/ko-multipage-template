@@ -1,9 +1,9 @@
-#友云采knockout 多页面应用项目模板
+# 友云采knockout 多页面应用项目模板
 - 基于konckout ko-epui kero
 - 使用vue-cli初始化工具
 - 初始化多页面的结构
 
-# for webpack 3.x 
+## for webpack 3.x 
 see [https://github.com/yonyouyc/ko-multipage-template/tree/webpack3.x](https://github.com/yonyouyc/ko-multipage-template/tree/webpack3.x)
 
 ## 如何使用
