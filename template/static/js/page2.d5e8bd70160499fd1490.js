@@ -1,0 +1,2 @@
+webpackJsonp([0],{"1lyH":function(o,e){console.log(window.location.href)},lmpx:function(o,e,l){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=l("1lyH");l.n(n);console.log("i am page 2")}},["lmpx"]);
+//# sourceMappingURL=page2.d5e8bd70160499fd1490.js.map
