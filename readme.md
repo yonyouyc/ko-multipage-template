@@ -9,7 +9,7 @@
 1. 安装vue-cli
 see [如何安装vue-cli](https://github.com/vuejs/vue-cli)
 2. 使用vue-cli初始化项目
-vue init yonyouyc/ko-multipage-template <project-name>
+vue init yonyouyc/ko-multipage-template/tree/webpack3.x <project-name>
 
 project-name 请输入自己的project-name
 
