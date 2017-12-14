@@ -4,8 +4,7 @@
 - 初始化多页面的结构
 
 # for webpack 3.x 
-see (https://github.com/yonyouyc/ko-multipage-template/tree/webpack3.x)[https://github.com/yonyouyc/ko-multipage-template/tree/webpack3.x]
-
+see [https://github.com/yonyouyc/ko-multipage-template/tree/webpack3.x](https://github.com/yonyouyc/ko-multipage-template/tree/webpack3.x)
 
 ## 如何使用
 
